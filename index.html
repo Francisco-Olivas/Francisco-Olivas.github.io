@@ -31,8 +31,8 @@
     <h2> Proyectos de Data Analyst</h2>
 
     
-    <div class="card">
-    <h3>Predictive Maintenance Dashboard (Medical Devices)</h3>
+   <div class="card">
+    <h3>Predictive Analytics for Medical Device Failures (FDA Data)</h3>
 
     <p>
         Desarrollo de un sistema de análisis predictivo basado en datos de la FDA (MDR) 
@@ -40,41 +40,54 @@
         mediante técnicas de Machine Learning y visualización en Tableau.
     </p>
 
-    <iframe 
-        src="https://public.tableau.com/views/MedicalEquipment_17761994007940/Dashboard1?:language=es-ES&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-        frameborder="0" 
-        allowFullScreen="true"
-        style="width:100%; height:800px; border-radius:10px;">
-    </iframe>
+    <!-- TABLEAU EMBED -->
+    <div class='tableauPlaceholder' id='vizDashboard' style='position: relative; width:100%;'>
 
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard'
+                src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
+                style='border: none; width:100%; border-radius:10px;' />
+            </a>
+        </noscript>
+
+        <object class='tableauViz' style='width:100%; height:800px; display:none;'>
+
+            <param name='host_url' value='https://public.tableau.com/' />
+            <param name='embed_code_version' value='3' />
+            <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='language' value='es-ES' />
+
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('vizDashboard');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+
+        vizElement.style.display = 'block';
+        vizElement.style.width = '100%';
+        vizElement.style.height = '800px';
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <!-- TEXTO -->
     <h4>Insights clave</h4>
     <ul>
         <li>Identificación de dispositivos con mayor probabilidad de falla en ventanas de 30/60/90 días</li>
         <li>Segmentación de equipos en perfiles de riesgo mediante clustering</li>
         <li>Análisis de tiempos entre fallas (TBF) para optimizar mantenimiento</li>
-        <li>Clasificación de riesgo clínico basada en eventos adversos y outcomes</li>
+        <li>Clasificación de riesgo clínico basada en eventos adversos</li>
         <li>Extracción de patrones de fallas a partir de texto libre (NLP)</li>
     </ul>
 
-    <h4>Qué incluye el análisis</h4>
-    <ul>
-        <li>Modelos de clasificación para predicción de fallas</li>
-        <li>Modelo de regresión para estimación de tiempo entre fallas</li>
-        <li>Procesamiento de lenguaje natural en reportes MDR</li>
-        <li>Clustering de dispositivos basado en comportamiento histórico</li>
-        <li>Dashboard interactivo en Tableau para exploración de datos</li>
-    </ul>
-
-    <h4>Enfoque técnico</h4>
-    <ul>
-        <li>Procesamiento de grandes volúmenes de datos (MAUDE - FDA)</li>
-        <li>Ingeniería de features temporales y clínicas</li>
-        <li>Optimización de datasets para visualización en Tableau</li>
-        <li>Integración de múltiples fuentes (device, patient, text)</li>
-    </ul>
-
     <div style="text-align: center; margin-top: 10px;">
-        <a href="https://public.tableau.com/views/MedicalEquipment_17761994007940/Dashboard1?:language=es-ES&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+        <a href="https://public.tableau.com/views/MedicalEquipment_17761994007940/Dashboard1" target="_blank">
             Ver dashboard en pantalla completa
         </a>
     </div>
