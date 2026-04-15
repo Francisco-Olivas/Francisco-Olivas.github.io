@@ -40,60 +40,93 @@
         mediante técnicas de Machine Learning y visualización en Tableau.
     </p>
 
-    <!-- CONTENEDOR CENTRADO -->
+    <!-- DASHBOARD 1 -->
+    <h4 style="margin-top:20px;">📊 Dashboard de Fallas y Riesgo</h4>
+
     <div style="display: flex; justify-content: center;">
-        
-        <div class='tableauPlaceholder' id='vizDashboard' 
+        <div class='tableauPlaceholder' id='vizDashboard1' 
              style='position: relative; width: 100%; max-width: 1000px;'>
 
             <noscript>
-                <a href='#'>
-                    <img alt='Dashboard'
-                    src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
-                    style='border: none; width:100%; border-radius:10px;' />
-                </a>
+                <img alt='Dashboard'
+                src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
             </noscript>
 
             <object class='tableauViz' style='display:none;'>
-
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
                 <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
                 <param name='language' value='es-ES' />
-
             </object>
         </div>
-
     </div>
 
+    <!-- DASHBOARD 2 NLP -->
+    <h4 style="margin-top:30px;">🧠 Dashboard de Análisis de Texto (NLP)</h4>
+
+    <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='vizDashboard2' 
+             style='position: relative; width: 100%; max-width: 1000px;'>
+
+            <noscript>
+                <img alt='Dashboard NLP'
+                src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='AnlisisTextoME/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='es-ES' />
+            </object>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
     <script type='text/javascript'>
-        var divElement = document.getElementById('vizDashboard');
-        var vizElement = divElement.getElementsByTagName('object')[0];
+        function loadViz(id){
+            var divElement = document.getElementById(id);
+            var vizElement = divElement.getElementsByTagName('object')[0];
 
-        vizElement.style.display = 'block';
-        vizElement.style.width = '100%';
-        vizElement.style.height = '800px';
+            vizElement.style.display = 'block';
+            vizElement.style.width = '100%';
+            vizElement.style.height = '800px';
 
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        }
+
+        loadViz('vizDashboard1');
+        loadViz('vizDashboard2');
     </script>
 
-    <!-- TEXTO -->
+    <!-- INSIGHTS -->
     <h4>Insights clave</h4>
     <ul>
-        <li>Se observa una alta concentración de incidentes en dispositivos específicos, destacando códigos como DZE y OGP como los más reportados.</li>
-        <li>Los eventos tipo M (Malfunction) dominan el dataset, lo que sugiere que la mayoría de fallas están relacionadas con funcionamiento técnico más que daño clínico directo.</li>
-        <li>El análisis de TBF muestra una alta densidad de fallas en los primeros 50 días, indicando posibles problemas de calidad o instalación.</li>
-        <li>Existen dispositivos con alto volumen de fallas y bajo tiempo entre fallas, identificándolos como candidatos críticos para mantenimiento predictivo.</li>
-        <li>El clustering revela segmentos de dispositivos con comportamiento homogéneo, permitiendo priorizar estrategias de monitoreo. </li>
+        <li>Alta concentración de incidentes en dispositivos específicos, destacando códigos como DZE y OGP como los más reportados.</li>
+        <li>Los eventos tipo M (Malfunction) dominan el dataset, indicando que la mayoría de fallas son de naturaleza técnica.</li>
+        <li>El TBF muestra alta densidad de fallas en los primeros 50 días, sugiriendo problemas de calidad o instalación.</li>
+        <li>Dispositivos con alto volumen de fallas y bajo TBF son candidatos críticos para mantenimiento predictivo.</li>
+        <li>El clustering permite segmentar dispositivos y priorizar estrategias de monitoreo.</li>
+        <li>Las fallas más comunes son generales (“fail”, “malfunction”), indicando problemas operativos amplios.</li>
+        <li>Las palabras clave técnicas aparecen principalmente en eventos tipo M, confirmando bajo impacto clínico en la mayoría de casos.</li>
+        <li>Los eventos críticos (IN, D) no presentan necesariamente descripciones más largas, indicando que la severidad no depende del detalle del reporte.</li>
     </ul>
 
     <div style="text-align: center; margin-top: 10px;">
         <a href="https://public.tableau.com/views/MedicalEquipment_17761994007940/Dashboard1" target="_blank">
-            Ver dashboard en pantalla completa
+            Ver dashboard principal
+        </a>
+        <br>
+        <a href="https://public.tableau.com/views/AnlisisTextoME/Dashboard1" target="_blank">
+            Ver dashboard NLP
         </a>
     </div>
 </div>
