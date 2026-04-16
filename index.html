@@ -2,331 +2,413 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Olivas | Data & ML</title>
+    <title>Portafolio | Data & ML</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Icono.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="Icono.png">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-    <span class="nav-logo">FO</span>
-    <div class="nav-links">
-        <a href="#about">Sobre mí</a>
-        <a href="#analytics">Analytics</a>
-        <a href="#ml">Machine Learning</a>
-        <a href="#contact" class="nav-cta">Contacto</a>
-    </div>
-</nav>
-
-<!-- HERO -->
-<header id="hero">
-    <div class="hero-noise"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-        <div class="hero-tag">
-            <span class="dot"></span> Disponible para nuevas oportunidades
-        </div>
-        <h1>Francisco<br><em>Olivas</em></h1>
-        <p class="hero-sub">Data Analyst · Data Scientist · ML Engineer</p>
-        <div class="hero-stack">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>Power BI</span>
-            <span>Tableau</span>
-            <span>Machine Learning</span>
-        </div>
-        <div class="hero-actions">
-            <a href="#analytics" class="btn-primary">Ver proyectos</a>
-            <a href="mailto:franc.olivasm@gmail.com" class="btn-secondary">Escribirme</a>
-        </div>
-    </div>
-    <div class="hero-scroll">
-        <span>scroll</span>
-        <div class="scroll-line"></div>
-    </div>
+<header>
+    <h1>Francisco Olivas</h1>
+    <p> Data Analyst | Data Scientist </p>
 </header>
 
-<!-- ABOUT -->
-<section id="about" class="section-about">
-    <div class="about-inner">
-        <div class="about-label">Sobre mí</div>
-        <div class="about-body">
-            <h2>Convierto datos<br>en decisiones.</h2>
-            <div class="about-text">
-                <p>Soy Analista y Científico de Datos especializado en construir dashboards analíticos, modelos de Machine Learning y sistemas de visión por computadora que generan impacto real en los procesos.</p>
-                <p>Actualmente curso una <strong>Maestría en Ingeniería en Computación</strong> con especialización en Ciencia de Datos, complementando mi perfil técnico con investigación aplicada en ML y procesamiento de señales biomédicas.</p>
-            </div>
-        </div>
-    </div>
+<section class="about">
+    <h2>Sobre mí</h2>
+    <p>
+    Analista de Datos enfocado en transformar datos en decisiones estratégicas mediante dashboards y análisis exploratorio.
+    </p>
+    
+    <p>
+    Actualmente curso una Maestría en Ingeniería en Computación con especialización en Ciencia de Datos, 
+    complementando mi perfil con Machine Learning y análisis avanzado
+    </p>
+    <p><strong>Stack:</strong> Python | SQL | Power BI | Tableau | Machine Learning</p>
 </section>
 
-<!-- ANALYTICS SECTION -->
-<section id="analytics" class="section-projects">
-    <div class="section-header">
-        <div class="section-label">01</div>
-        <h2>Data Analytics</h2>
-        <p>Dashboards interactivos e insights accionables para la toma de decisiones.</p>
-    </div>
+<section>
+    <h2> Proyectos de Data Analyst</h2>
 
-    <!-- CARD: FDA -->
-    <div class="project-card featured">
-        <div class="project-meta">
-            <span class="project-tag">Tableau · Machine Learning · NLP</span>
-            <span class="project-domain">Healthcare / FDA</span>
-        </div>
-        <h3>Predictive Analytics for Medical Device Failures</h3>
-        <p class="project-desc">
-            Sistema de análisis predictivo sobre datos MDR de la FDA para anticipar fallas en dispositivos médicos,
-            evaluar riesgo clínico y segmentar equipos mediante clustering y NLP.
-        </p>
+    
+<div class="card">
+    <h3>Predictive Analytics for Medical Device Failures (FDA Data)</h3>
 
-        <div class="dashboard-block">
-            <div class="dashboard-label">Dashboard de Fallas y Riesgo</div>
-            <div class='tableauPlaceholder' id='vizDashboard1' style='position:relative; width:100%;'>
-                <noscript>
-                    <img alt='Dashboard' src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png' style='width:100%;border-radius:10px;'/>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https://public.tableau.com/'/>
-                    <param name='embed_code_version' value='3'/>
-                    <param name='name' value='MedicalEquipment_17761994007940/Dashboard1'/>
-                    <param name='tabs' value='no'/>
-                    <param name='toolbar' value='yes'/>
-                    <param name='language' value='es-ES'/>
-                </object>
-            </div>
-        </div>
+    <p>
+        Desarrollo de un sistema de análisis predictivo basado en datos de la FDA (MDR) 
+        para anticipar fallas en dispositivos médicos, evaluar riesgo clínico y segmentar equipos 
+        mediante técnicas de Machine Learning y visualización en Tableau.
+    </p>
 
-        <div class="dashboard-block">
-            <div class="dashboard-label">Dashboard de Análisis de Descripciones de Falla (NLP)</div>
-            <div class='tableauPlaceholder' id='vizDashboard2' style='position:relative; width:100%;'>
-                <noscript>
-                    <img alt='Dashboard NLP' src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png' style='width:100%;border-radius:10px;'/>
-                </noscript>
-                <object class='tableauViz' style='display:none;'>
-                    <param name='host_url' value='https://public.tableau.com/'/>
-                    <param name='embed_code_version' value='3'/>
-                    <param name='name' value='AnlisisTextoME/Dashboard1'/>
-                    <param name='tabs' value='no'/>
-                    <param name='toolbar' value='yes'/>
-                    <param name='language' value='es-ES'/>
-                </object>
-            </div>
-        </div>
+    <!-- DASHBOARD 1 -->
+    <h4 style="margin-top:20px;"> Dashboard de Fallas y Riesgo</h4>
 
-        <script type='text/javascript'>
-            function loadViz(id){
-                var divElement = document.getElementById(id);
-                var vizElement = divElement.getElementsByTagName('object')[0];
-                vizElement.style.display = 'block';
-                vizElement.style.width = '100%';
-                vizElement.style.height = '800px';
-                var scriptElement = document.createElement('script');
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-            }
-            loadViz('vizDashboard1');
-            loadViz('vizDashboard2');
-        </script>
+    <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='vizDashboard1' 
+             style='position: relative; width: 100%; max-width: 1000px;'>
 
-        <div class="insights-grid">
-            <div class="insight"><span>📍</span> Alta concentración en dispositivos DZE y OGP como los más reportados.</div>
-            <div class="insight"><span>⚙️</span> Eventos tipo M (Malfunction) dominan el dataset — fallas de naturaleza técnica.</div>
-            <div class="insight"><span>📈</span> TBF con alta densidad en los primeros 50 días sugiere problemas de calidad o instalación.</div>
-            <div class="insight"><span>🔍</span> Clustering permite segmentar dispositivos y priorizar estrategias de monitoreo.</div>
+            <noscript>
+                <img alt='Dashboard'
+                src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='es-ES' />
+            </object>
         </div>
     </div>
 
-    <!-- CARD: HR -->
-    <div class="project-card">
-        <div class="project-meta">
-            <span class="project-tag">Power BI · DAX · Power Query</span>
-            <span class="project-domain">Human Resources</span>
-        </div>
-        <h3>HR Analytics Dashboard</h3>
-        <p class="project-desc">
-            Dashboard integral para el análisis de talento: desempeño, engagement, capacitación y rotación de personal.
-        </p>
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNjNlOWUxOTAtYmI4Ny00ZDIzLWJiM2UtZmI2NzU4Y2ExODI2IiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    <!-- DASHBOARD 2 NLP -->
+    <h4 style="margin-top:30px;"> Dashboard de Análisis de Descripciones de Falla</h4>
 
-        <div class="two-col">
-            <div>
-                <h4>Qué incluye</h4>
-                <ul>
-                    <li>KPIs: headcount, rotación y tasa de selección</li>
-                    <li>Análisis de desempeño por área</li>
-                    <li>Efectividad de capacitación interna vs externa</li>
-                    <li>Análisis de engagement y balance vida-trabajo</li>
-                    <li>Embudo de reclutamiento y tasa de conversión</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Enfoque técnico</h4>
-                <ul>
-                    <li>Modelo relacional tipo estrella</li>
-                    <li>Transformación en Power Query</li>
-                    <li>Métricas en DAX para KPIs</li>
-                    <li>Integración de múltiples fuentes de datos</li>
-                </ul>
-            </div>
+    <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='vizDashboard2' 
+             style='position: relative; width: 100%; max-width: 1000px;'>
+
+            <noscript>
+                <img alt='Dashboard NLP'
+                src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
+            </noscript>
+
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='AnlisisTextoME/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='es-ES' />
+            </object>
         </div>
     </div>
 
-    <!-- CARD: Supply Chain -->
-    <div class="project-card">
-        <div class="project-meta">
-            <span class="project-tag">Power BI · DAX · Procurement</span>
-            <span class="project-domain">Supply Chain</span>
-        </div>
-        <h3>Análisis de Proveedores y Compras</h3>
-        <p class="project-desc">
-            Dashboard en Power BI para evaluar desempeño de proveedores, optimizar costos y monitorear indicadores clave en procurement.
-        </p>
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTM0ZjBkZDItYzE3NC00Njk1LWI5YmUtOGUzMDg0MWY1MmQzIiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    <!-- SCRIPT -->
+    <script type='text/javascript'>
+        function loadViz(id){
+            var divElement = document.getElementById(id);
+            var vizElement = divElement.getElementsByTagName('object')[0];
 
-        <div class="insights-grid">
-            <div class="insight"><span>🏆</span> Alpha_Inc: mejor desempeño en cumplimiento y calidad.</div>
-            <div class="insight"><span>⚖️</span> Trade-off detectado entre ahorro y desempeño operativo.</div>
-            <div class="insight"><span>❌</span> Office Supplies: mayor tasa de defectos por categoría.</div>
-            <div class="insight"><span>📦</span> ~8% de órdenes canceladas sobre el total.</div>
-        </div>
+            vizElement.style.display = 'block';
+            vizElement.style.width = '100%';
+            vizElement.style.height = '800px';
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        }
+
+        loadViz('vizDashboard1');
+        loadViz('vizDashboard2');
+    </script>
+
+    <!-- INSIGHTS -->
+    <h4>Insights clave</h4>
+    <ul>
+        <li>Alta concentración de incidentes en dispositivos específicos, destacando códigos como DZE y OGP como los más reportados.</li>
+        <li>Los eventos tipo M (Malfunction) dominan el dataset, indicando que la mayoría de fallas son de naturaleza técnica.</li>
+        <li>El TBF muestra alta densidad de fallas en los primeros 50 días, sugiriendo problemas de calidad o instalación.</li>
+        <li>Dispositivos con alto volumen de fallas y bajo TBF son candidatos críticos para mantenimiento predictivo.</li>
+        <li>El clustering permite segmentar dispositivos y priorizar estrategias de monitoreo.</li>
+        <li>Las fallas más comunes son generales (“fail”, “malfunction”), indicando problemas operativos amplios.</li>
+        <li>Las palabras clave aparecen principalmente en eventos tipo M, confirmando bajo impacto clínico en la mayoría de casos.</li>
+        <li>Los eventos críticos (IN, D) no presentan necesariamente descripciones más largas, indicando que la severidad no depende del detalle del reporte.</li>
+    </ul>
+
     </div>
+</div>
+    
+    
+    <div class="card">
+    <h3>HR Analytics Dashboard</h3>
+    <p>
+        Desarrollo de un dashboard en Power BI para el análisis integral del talento, evaluando desempeño,
+        engagement, capacitación y rotación de personal para apoyar la toma de decisiones en recursos humanos.
+    </p>
 
-    <!-- CARD: Ventas -->
-    <div class="project-card">
-        <div class="project-meta">
-            <span class="project-tag">Power BI · Análisis Comercial</span>
-            <span class="project-domain">Sales</span>
-        </div>
+    <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiNjNlOWUxOTAtYmI4Ny00ZDIzLWJiM2UtZmI2NzU4Y2ExODI2IiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9"
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
+
+        
+    <h4>Insights clave</h4>
+<ul>
+    <li>Distribución de desempeño concentrada en niveles medios, con oportunidad de impulsar alto rendimiento</li>
+    <li>Programas de capacitación interna más efectivos, aunque con mayor inversión</li>
+    <li>Engagement sin correlación clara con desempeño, sugiriendo influencia de otros factores</li>
+    <li>Proceso de reclutamiento con alta tasa de filtrado en etapas intermedias</li>
+</ul>
+
+<h4>Qué incluye el análisis</h4>
+<ul>
+    <li>Evaluación de KPIs: headcount, rotación, desempeño promedio y tasa de selección</li>
+    <li>Análisis de desempeño por área y distribución de niveles de rendimiento</li>
+    <li>Evaluación de efectividad de capacitación (interna vs externa) y su impacto en desempeño</li>
+    <li>Análisis de engagement, satisfacción y balance vida-trabajo por empleado y área</li>
+    <li>Optimización del proceso de reclutamiento mediante análisis de embudo y tasa de conversión</li>
+</ul>
+
+<h4>Enfoque técnico</h4>
+<ul>
+    <li>Modelado de datos relacional integrando múltiples fuentes (empleados, encuestas, capacitación y reclutamiento)</li>
+    <li>Diseño de modelo tipo estrella con relaciones uno a muchos para optimizar el análisis</li>
+    <li>Transformación y limpieza de datos en Power Query</li>
+    <li>Desarrollo de métricas en DAX para KPIs y análisis comparativo</li>
+</ul>
+ </div>
+    <div class="card">
+    <h3>Análisis de Proveedores y Compras (Supply Chain)</h3>
+
+    <p>
+        Desarrollo de dashboard en Power BI para evaluar el desempeño de proveedores,
+        optimizar costos y monitorear indicadores clave en procesos de procurement.
+    </p>
+
+    <iframe 
+        src="https://app.powerbi.com/view?r=eyJrIjoiYTM0ZjBkZDItYzE3NC00Njk1LWI5YmUtOGUzMDg0MWY1MmQzIiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9"
+        frameborder="0" 
+        allowFullScreen="true">
+    </iframe>
+
+    <h4> Hallazgos clave</h4>
+    <ul>
+        <li>Alpha_Inc presenta el mejor desempeño general en cumplimiento y calidad, aunque no es el que genera mayor ahorro.</li>
+        <li>Existe un trade-off entre ahorro y desempeño operativo entre proveedores.</li>
+        <li>La categoría Office Supplies presenta la mayor tasa de defectos.</li>
+        <li>Las órdenes canceladas representan aproximadamente el 8% del total.</li>
+    </ul>
+
+    <h4>Qué incluye el análisis</h4>
+    <ul>
+        <li>Evaluación de KPIs: gasto total, ahorro, entregas y tiempos</li>
+        <li>Ranking de proveedores mediante el desarrollo de un modelo de evaluación para calcular un índice de desempeño</li>
+        <li>Análisis de calidad y defectos por categoría</li>
+        <li>Análisis temporal por año y cuatrimestre</li>
+    </ul>
+
+
+</div>
+</div>
+    <div class="card">
         <h3>Análisis de Ventas</h3>
-        <p class="project-desc">
-            Identificación de patrones de estacionalidad y diferencias de desempeño entre sucursales para detectar oportunidades de optimización comercial.
+        <p>
+            Se identificaron patrones de estacionalidad y diferencias de desempeño entre sucursales,
+            permitiendo detectar oportunidades de optimización comercial.
         </p>
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOTBiMWU3ZDAtM2EyZi00YjJlLTg0NzQtNWVjYThmNjM2YzVmIiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 
-        <div class="insights-grid">
-            <div class="insight"><span>📊</span> Alta concentración de ventas en una sucursal principal.</div>
-            <div class="insight"><span>📅</span> Comportamiento estacional identificado en meses clave.</div>
-            <div class="insight"><span>👤</span> Diferencias significativas en eficiencia por vendedor.</div>
-            <div class="insight"><span>📍</span> Variabilidad notable entre ubicaciones geográficas.</div>
-        </div>
+        <iframe 
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTBiMWU3ZDAtM2EyZi00YjJlLTg0NzQtNWVjYThmNjM2YzVmIiwidCI6Ijk5NWFlOWFlLTVjYjMtNDRmMi1hYjI3LWI1M2RkOTNmM2RkOSIsImMiOjR9"
+            frameborder="0" 
+            allowFullScreen="true">
+        </iframe>
+
+        <h4>Insights clave</h4>
+        <ul>
+            <li>Alta concentración de ventas en una sucursal principal</li>
+            <li>Variabilidad significativa entre ubicaciones</li>
+            <li>Comportamiento estacional en ciertos meses</li>
+            <li>Diferencias en eficiencia por vendedor</li>
+        </ul>
+
     </div>
+
 </section>
 
-<!-- ML SECTION -->
-<section id="ml" class="section-projects dark-section">
-    <div class="section-header light">
-        <div class="section-label">02</div>
-        <h2>Machine Learning</h2>
-        <p>Modelos entrenados y deployados para problemas reales en industria y salud.</p>
+<section>
+    <h2> Proyectos de Machine Learning</h2>
+
+    <div class="card">
+    <h3>Clasificación de calidad de soldadura con visión por computadora</h3>
+
+    <p>
+        Desarrollo de un modelo de Computer Vision para clasificar la calidad de soldaduras a partir de imágenes,
+        con el objetivo de automatizar procesos de inspección en entornos industriales.
+    </p>
+
+    <h4>Qué hice:</h4>
+    <ul>
+        <li>Preprocesamiento de imágenes y preparación del dataset</li>
+        <li>Entrenamiento de modelo de clasificación basado en Deep Learning</li>
+        <li>Evaluación del modelo con métricas de desempeño</li>
+        <li>Optimización del modelo para mejorar la precisión en la detección</li>
+    </ul>
+
+    <h4>Resultados:</h4>
+    <ul>
+        <li>Clasificación efectiva entre soldaduras defectuosas y correctas</li>
+        <li>Aplicación de visión por computadora en control de calidad</li>
+        <li>Potencial para automatización en procesos industriales</li>
+    </ul>
+
+    <p><strong>Tecnologías:</strong> Python | OpenCV | TensorFlow/Keras | Computer Vision | Gradcam </p>
+
+    <div class="ml-preview">
+        <p>Vista del proyecto:</p>
+        <img src="weld.jpg" alt="Clasificación de soldadura" style="width:100%; border-radius:10px;">
+
+        <a href="https://github.com/Francisco-Olivas/Weld-Quality-Image-Classification" target="_blank">
+            Ver código en GitHub
+        </a>
+    </div>
+</div>
+    
+    
+    <div class="card">
+    <h3>Modelo de clasificación de estados cognitivos con señales EEG</h3>
+
+    <p>
+        Desarrollo de un modelo de Machine Learning para clasificar estados cognitivos (concentración, relajación, escuchar música) a partir de señales EEG,
+        aplicando técnicas de procesamiento de señales y análisis multivariante.
+    </p>
+
+    <h4>Qué se hizo:</h4>
+    <ul>
+        <li>Preprocesamiento de señales EEG (filtrado y limpieza)</li>
+        <li>Extracción de características multivariantes</li>
+        <li>Entrenamiento de modelos de clasificación</li>
+        <li>Evaluación del modelo con métricas de desempeño</li>
+    </ul>
+
+    <h4>Resultados:</h4>
+    <ul>
+        <li>Accuracy superior al 92%</li>
+        <li>Identificación de patrones en señales cerebrales</li>
+        <li>Aplicación de ML en neuroingeniería</li>
+    </ul>
+
+    <p><strong>Tecnologías:</strong> Python | NumPy | Pandas | Scikit-learn | SVM | Random Forest</p>
+
+    <div style="text-align: center; margin-top: 10px;">
+        <a href="https://github.com/Francisco-Olivas/EEG-Mental-State-Classification" target="_blank">
+            Ver código en GitHub
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Análisis multivariante de señales EMG para clasificación muscular</h3>
+
+    <p>
+        Desarrollo de un modelo de clasificación para distinguir actividad muscular utilizando señales EMG,
+        integrando procesamiento de señales y técnicas de Machine Learning.
+    </p>
+
+    <h4>Qué se hizo:</h4>
+    <ul>
+        <li>Adquisición y limpieza de señales EMG</li>
+        <li>Extracción de features relevantes</li>
+        <li>Entrenamiento de modelos supervisados</li>
+        <li>Evaluación y validación del modelo</li>
+    </ul>
+
+    <h4>Resultados:</h4>
+    <ul>
+        <li>Accuracy superior al 96%</li>
+        <li>Clasificación efectiva de actividad muscular</li>
+        <li>Aplicación en bioingeniería y salud</li>
+    </ul>
+
+    <p><strong>Tecnologías:</strong> Python | Scikit-learn | Signal Processing | SVM | Random Forest</p>
+
+    <div style="text-align: center; margin-top: 10px;">
+        <a href="https://github.com/Francisco-Olivas/EMG-Classification" target="_blank">
+            Ver código en GitHub
+        </a>
+    </div>
+</div>
+
+<div class="card">
+        <h3>Heart Failure Prediction</h3>
+
+        <p>
+            Desarrollo de modelo de Machine Learning para predecir la probabilidad de enfermedad cardíaca 
+            a partir de variables clínicas, con el objetivo de apoyar la detección temprana y la toma de decisiones médicas.
+        </p>
+
+        <h4>Qué se hizo</h4>
+        <ul>
+            <li>Limpieza y preprocesamiento de datos clínicos</li>
+            <li>Análisis exploratorio para identificar variables relevantes</li>
+            <li>Entrenamiento y comparación de modelos de clasificación</li>
+            <li>Evaluación con métricas como accuracy, precision y recall</li>
+        </ul>
+
+        <h4>Resultados</h4>
+        <ul>
+            <li>Identificación de patrones asociados al riesgo de enfermedad cardíaca</li>
+            <li>Variables clínicas clave para la predicción</li>
+            <li>Aplicación de ML en contexto de salud real</li>
+        </ul>
+
+        <p><strong>Tecnologías:</strong> Python | Pandas | Scikit-learn</p>
+
+        <h4>Métricas del modelo</h4>
+<ul>
+    <li>Accuracy: 87%</li>
+    <li>Recall: 83%</li>
+</ul>
+
+      <div style="text-align: center; margin-top: 10px;">
+    <a href="https://github.com/Francisco-Olivas/Heart-Failure-Prediction" target="_blank">
+        Ver código en GitHub
+    </a>
+</div>
     </div>
 
-    <div class="ml-grid">
+    
+    <!-- PROYECTO 1 -->
+    <div class="card">
+        <h3>Predicción de casos de dengue</h3>
 
-        <!-- Soldadura -->
-        <div class="ml-card">
-            <div class="ml-card-top">
-                <span class="ml-tag">Computer Vision · Deep Learning</span>
-                <a href="https://github.com/Francisco-Olivas/Weld-Quality-Image-Classification" target="_blank" class="gh-link">GitHub →</a>
-            </div>
-            <h3>Clasificación de calidad de soldadura</h3>
-            <p>Modelo CNN para clasificar soldaduras defectuosas vs correctas en entornos industriales, con visualización GradCAM.</p>
-            <img src="weld.jpg" alt="Clasificación de soldadura">
-            <div class="tech-stack">
-                <code>Python</code><code>OpenCV</code><code>TensorFlow/Keras</code><code>GradCAM</code>
-            </div>
+        <p>
+            Se desarrolló un modelo de Machine Learning para predecir la incidencia de casos de dengue 
+            a partir de datos históricos, con el objetivo de apoyar la toma de decisiones en salud pública.
+        </p>
+
+        <h4>Qué hice:</h4>
+        <ul>
+            <li>Limpieza y análisis exploratorio de datos</li>
+            <li>Feature engineering para mejorar la precisión del modelo</li>
+            <li>Entrenamiento y evaluación de modelos de predicción</li>
+        </ul>
+
+        <h4>Impacto:</h4>
+        <p>
+            El modelo permite anticipar tendencias en casos de dengue, facilitando la planificación 
+            de recursos y estrategias preventivas.
+        </p>
+
+        <p><strong>Tecnologías:</strong> Python | Pandas | Scikit-learn | Streamlit</p>
+
+        <div class="ml-preview">
+            <p>Vista Previa:</p>
+            <img src="dengue.JPG" alt="Demo dengue" style="width:100%; border-radius:10px;">
+
+            <a href="https://dengue-cases-prediction-olivas.streamlit.app/" target="_blank">
+                Demo Interactiva
+            </a>
+
+            <a href="https://github.com/Francisco-Olivas/Dengue-Cases-Prediction" target="_blank">
+                Ver código en GitHub
+            </a>
         </div>
-
-        <!-- EEG -->
-        <div class="ml-card">
-            <div class="ml-card-top">
-                <span class="ml-tag">Signal Processing · Neuroingeniería</span>
-                <a href="https://github.com/Francisco-Olivas/EEG-Mental-State-Classification" target="_blank" class="gh-link">GitHub →</a>
-            </div>
-            <h3>Clasificación de estados cognitivos (EEG)</h3>
-            <p>Modelo ML para clasificar concentración, relajación y escucha musical a partir de señales cerebrales.</p>
-            <div class="metric-highlight">
-                <div class="metric"><span>92%+</span><small>Accuracy</small></div>
-                <div class="metric-desc">Identificación de patrones en señales EEG multivariantes.</div>
-            </div>
-            <div class="tech-stack">
-                <code>Python</code><code>NumPy</code><code>Scikit-learn</code><code>SVM</code><code>Random Forest</code>
-            </div>
-        </div>
-
-        <!-- EMG -->
-        <div class="ml-card">
-            <div class="ml-card-top">
-                <span class="ml-tag">Signal Processing · Bioingeniería</span>
-                <a href="https://github.com/Francisco-Olivas/EMG-Classification" target="_blank" class="gh-link">GitHub →</a>
-            </div>
-            <h3>Clasificación muscular con señales EMG</h3>
-            <p>Modelo supervisado para distinguir actividad muscular mediante análisis multivariante de señales EMG.</p>
-            <div class="metric-highlight">
-                <div class="metric"><span>96%+</span><small>Accuracy</small></div>
-                <div class="metric-desc">Clasificación efectiva para aplicaciones en bioingeniería y salud.</div>
-            </div>
-            <div class="tech-stack">
-                <code>Python</code><code>Scikit-learn</code><code>SVM</code><code>Random Forest</code>
-            </div>
-        </div>
-
-        <!-- Heart Failure -->
-        <div class="ml-card">
-            <div class="ml-card-top">
-                <span class="ml-tag">Clasificación · Salud</span>
-                <a href="https://github.com/Francisco-Olivas/Heart-Failure-Prediction" target="_blank" class="gh-link">GitHub →</a>
-            </div>
-            <h3>Heart Failure Prediction</h3>
-            <p>Modelo de ML para predecir riesgo de enfermedad cardíaca a partir de variables clínicas, apoyando detección temprana.</p>
-            <div class="metric-highlight">
-                <div class="metric"><span>87%</span><small>Accuracy</small></div>
-                <div class="metric"><span>83%</span><small>Recall</small></div>
-            </div>
-            <div class="tech-stack">
-                <code>Python</code><code>Pandas</code><code>Scikit-learn</code>
-            </div>
-        </div>
-
-        <!-- Dengue -->
-        <div class="ml-card featured-ml">
-            <div class="ml-card-top">
-                <span class="ml-tag">Predicción · Salud Pública · Streamlit</span>
-                <div class="ml-links">
-                    <a href="https://dengue-cases-prediction-olivas.streamlit.app/" target="_blank" class="gh-link demo">Demo →</a>
-                    <a href="https://github.com/Francisco-Olivas/Dengue-Cases-Prediction" target="_blank" class="gh-link">GitHub →</a>
-                </div>
-            </div>
-            <h3>Predicción de casos de dengue</h3>
-            <p>Modelo predictivo para anticipar incidencia de dengue a partir de datos históricos, deployado con demo interactiva en Streamlit.</p>
-            <img src="dengue.JPG" alt="Demo dengue">
-            <div class="tech-stack">
-                <code>Python</code><code>Pandas</code><code>Scikit-learn</code><code>Streamlit</code>
-            </div>
-        </div>
-
     </div>
+
+    <!-- PROYECTO 2 -->
+    
 </section>
-
-<!-- CONTACT -->
-<section id="contact" class="section-contact">
-    <div class="contact-inner">
-        <div class="contact-label">¿Hablamos?</div>
-        <h2>Estoy abierto a<br>nuevas oportunidades.</h2>
-        <p>Ya sea un rol de Data Analyst, Data Scientist o ML Engineer — si tienes un reto interesante, me interesa escucharte.</p>
-        <a href="mailto:franc.olivasm@gmail.com" class="btn-contact">franc.olivasm@gmail.com</a>
-    </div>
-</section>
-
+    
 <footer>
-    <div class="footer-inner">
-        <span class="footer-name">Francisco Olivas</span>
-        <span class="footer-role">Data & ML</span>
-    </div>
+    <p>
+    <a href="mailto:franc.olivasm@gmail.com">Contácteme por correo</a>
+    </p>
 </footer>
 
 </body>
