@@ -106,5 +106,17 @@ footer {
     text-align: center;
 }
 
+.tableau-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableauPlaceholder {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 
 
