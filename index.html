@@ -55,19 +55,17 @@
     </p>
 
     <!-- DASHBOARD 1 -->
-    <h4 style="margin-top:20px;"> Dashboard de Fallas y Riesgo</h4>
+    <h4 style="margin-top:20px;">Dashboard de Fallas y Riesgo</h4>
 
-    <div style="display: flex; justify-content: center;">
-        <div class='tableauPlaceholder' id='vizDashboard1' 
-             style='position: relative; width: 100%; max-width: 1000px;'>
-
+    <div class="tableau-container">
+        <div class='tableauPlaceholder' id='vizDashboard1'>
             <noscript>
                 <img alt='Dashboard'
                 src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
                 style='width:100%; border-radius:10px;' />
             </noscript>
 
-            <object class='tableauViz' style='display:none;'>
+            <object class='tableauViz'>
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
                 <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
@@ -78,20 +76,18 @@
         </div>
     </div>
 
-    <!-- DASHBOARD 2 NLP -->
-    <h4 style="margin-top:30px;"> Dashboard de Análisis de Descripciones de Falla</h4>
+    <!-- DASHBOARD 2 -->
+    <h4 style="margin-top:30px;">Dashboard de Análisis de Descripciones de Falla</h4>
 
-    <div style="display: flex; justify-content: center;">
-        <div class='tableauPlaceholder' id='vizDashboard2' 
-             style='position: relative; width: 100%; max-width: 1000px;'>
-
+    <div class="tableau-container">
+        <div class='tableauPlaceholder' id='vizDashboard2'>
             <noscript>
                 <img alt='Dashboard NLP'
                 src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png'
                 style='width:100%; border-radius:10px;' />
             </noscript>
 
-            <object class='tableauViz' style='display:none;'>
+            <object class='tableauViz'>
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
                 <param name='name' value='AnlisisTextoME/Dashboard1' />
@@ -102,7 +98,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT -->
+    <!-- SCRIPT CORREGIDO -->
     <script type='text/javascript'>
         function loadViz(id){
             var divElement = document.getElementById(id);
@@ -110,7 +106,9 @@
 
             vizElement.style.display = 'block';
             vizElement.style.width = '100%';
+            vizElement.style.maxWidth = '1000px';
             vizElement.style.height = '800px';
+            vizElement.style.margin = '0 auto';
 
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
@@ -133,8 +131,6 @@
         <li>Las palabras clave aparecen principalmente en eventos tipo M, confirmando bajo impacto clínico en la mayoría de casos.</li>
         <li>Los eventos críticos (IN, D) no presentan necesariamente descripciones más largas, indicando que la severidad no depende del detalle del reporte.</li>
     </ul>
-
-    </div>
 </div>
     
     
