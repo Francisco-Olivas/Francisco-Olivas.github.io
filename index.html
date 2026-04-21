@@ -43,96 +43,6 @@
 
 <section>
     <h2> Proyectos de Data Analyst</h2>
-
-    
-<div class="card">
-    <h3>Predictive Analytics for Medical Device Failures (FDA Data)</h3>
-
-    <p>
-        Desarrollo de un sistema de análisis predictivo basado en datos de la FDA (MDR) 
-        para anticipar fallas en dispositivos médicos, evaluar riesgo clínico y segmentar equipos 
-        mediante técnicas de Machine Learning y visualización en Tableau.
-    </p>
-
-    <!-- DASHBOARD 1 -->
-    <h4 style="margin-top:20px;">Dashboard de Fallas y Riesgo</h4>
-
-    <div class="tableau-container">
-        <div class='tableauPlaceholder' id='vizDashboard1'>
-            <noscript>
-                <img alt='Dashboard'
-                src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
-                style='width:100%; border-radius:10px;' />
-            </noscript>
-
-            <object class='tableauViz'>
-                <param name='host_url' value='https://public.tableau.com/' />
-                <param name='embed_code_version' value='3' />
-                <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='language' value='es-ES' />
-            </object>
-        </div>
-    </div>
-
-    <!-- DASHBOARD 2 -->
-    <h4 style="margin-top:30px;">Dashboard de Análisis de Descripciones de Falla</h4>
-
-    <div class="tableau-container">
-        <div class='tableauPlaceholder' id='vizDashboard2'>
-            <noscript>
-                <img alt='Dashboard NLP'
-                src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png'
-                style='width:100%; border-radius:10px;' />
-            </noscript>
-
-            <object class='tableauViz'>
-                <param name='host_url' value='https://public.tableau.com/' />
-                <param name='embed_code_version' value='3' />
-                <param name='name' value='AnlisisTextoME/Dashboard1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='language' value='es-ES' />
-            </object>
-        </div>
-    </div>
-
-    <!-- SCRIPT CORREGIDO -->
-    <script type='text/javascript'>
-        function loadViz(id){
-            var divElement = document.getElementById(id);
-            var vizElement = divElement.getElementsByTagName('object')[0];
-
-            vizElement.style.display = 'block';
-            vizElement.style.width = '100%';
-            vizElement.style.maxWidth = '1000px';
-            vizElement.style.height = '800px';
-            vizElement.style.margin = '0 auto';
-
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        }
-
-        loadViz('vizDashboard1');
-        loadViz('vizDashboard2');
-    </script>
-
-    <!-- INSIGHTS -->
-    <h4>Insights clave</h4>
-    <ul>
-        <li>Alta concentración de incidentes en dispositivos específicos, destacando códigos como DZE y OGP como los más reportados.</li>
-        <li>Los eventos tipo M (Malfunction) dominan el dataset, indicando que la mayoría de fallas son de naturaleza técnica.</li>
-        <li>El TBF muestra alta densidad de fallas en los primeros 50 días, sugiriendo problemas de calidad o instalación.</li>
-        <li>Dispositivos con alto volumen de fallas y bajo TBF son candidatos críticos para mantenimiento predictivo.</li>
-        <li>El clustering permite segmentar dispositivos y priorizar estrategias de monitoreo.</li>
-        <li>Las fallas más comunes son generales (“fail”, “malfunction”), indicando problemas operativos amplios.</li>
-        <li>Las palabras clave aparecen principalmente en eventos tipo M, confirmando bajo impacto clínico en la mayoría de casos.</li>
-        <li>Los eventos críticos (IN, D) no presentan necesariamente descripciones más largas, indicando que la severidad no depende del detalle del reporte.</li>
-    </ul>
-</div>
-    
     
     <div class="card">
     <h3>HR Analytics Dashboard</h3>
@@ -228,6 +138,95 @@
         </ul>
 
     </div>
+
+    <div class="card">
+    <h3>Predictive Analytics for Medical Device Failures (FDA Data)</h3>
+
+    <p>
+        Desarrollo de un sistema de análisis predictivo basado en datos de la FDA (MDR) 
+        para anticipar fallas en dispositivos médicos, evaluar riesgo clínico y segmentar equipos 
+        mediante técnicas de Machine Learning y visualización en Tableau.
+    </p>
+
+    <!-- DASHBOARD 1 -->
+    <h4 style="margin-top:20px;">Dashboard de Fallas y Riesgo</h4>
+
+    <div class="tableau-container">
+        <div class='tableauPlaceholder' id='vizDashboard1'>
+            <noscript>
+                <img alt='Dashboard'
+                src='https://public.tableau.com/static/images/Me/MedicalEquipment_17761994007940/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
+            </noscript>
+
+            <object class='tableauViz'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='MedicalEquipment_17761994007940/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='es-ES' />
+            </object>
+        </div>
+    </div>
+
+    <!-- DASHBOARD 2 -->
+    <h4 style="margin-top:30px;">Dashboard de Análisis de Descripciones de Falla</h4>
+
+    <div class="tableau-container">
+        <div class='tableauPlaceholder' id='vizDashboard2'>
+            <noscript>
+                <img alt='Dashboard NLP'
+                src='https://public.tableau.com/static/images/An/AnlisisTextoME/Dashboard1/1.png'
+                style='width:100%; border-radius:10px;' />
+            </noscript>
+
+            <object class='tableauViz'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='AnlisisTextoME/Dashboard1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='language' value='es-ES' />
+            </object>
+        </div>
+    </div>
+
+    <!-- SCRIPT CORREGIDO -->
+    <script type='text/javascript'>
+        function loadViz(id){
+            var divElement = document.getElementById(id);
+            var vizElement = divElement.getElementsByTagName('object')[0];
+
+            vizElement.style.display = 'block';
+            vizElement.style.width = '100%';
+            vizElement.style.maxWidth = '1000px';
+            vizElement.style.height = '800px';
+            vizElement.style.margin = '0 auto';
+
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        }
+
+        loadViz('vizDashboard1');
+        loadViz('vizDashboard2');
+    </script>
+
+    <!-- INSIGHTS -->
+    <h4>Insights clave</h4>
+    <ul>
+        <li>Alta concentración de incidentes en dispositivos específicos, destacando códigos como DZE y OGP como los más reportados.</li>
+        <li>Los eventos tipo M (Malfunction) dominan el dataset, indicando que la mayoría de fallas son de naturaleza técnica.</li>
+        <li>El TBF muestra alta densidad de fallas en los primeros 50 días, sugiriendo problemas de calidad o instalación.</li>
+        <li>Dispositivos con alto volumen de fallas y bajo TBF son candidatos críticos para mantenimiento predictivo.</li>
+        <li>El clustering permite segmentar dispositivos y priorizar estrategias de monitoreo.</li>
+        <li>Las fallas más comunes son generales (“fail”, “malfunction”), indicando problemas operativos amplios.</li>
+        <li>Las palabras clave aparecen principalmente en eventos tipo M, confirmando bajo impacto clínico en la mayoría de casos.</li>
+        <li>Los eventos críticos (IN, D) no presentan necesariamente descripciones más largas, indicando que la severidad no depende del detalle del reporte.</li>
+    </ul>
+</div>
+    
 
 </section>
 
